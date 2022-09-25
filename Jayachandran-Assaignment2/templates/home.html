@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{% block title %} Home page {% endblock %}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+    body::-webkit-scrollbar {
+         display: none;
+    }
+</style>
+
+</head>
+<body>
+  {% block content %}
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="http://127.0.0.1:5000/" class="w3-bar-item w3-button"><b>About</b> The Care</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+        <a href="http://127.0.0.1:5000/about" class="w3-bar-item w3-button">About</a>
+        <a href="http://127.0.0.1:5000/signin" class="w3-bar-item w3-button">SignIn</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="" class="w3-bar-item w3-buttin"><i class="fa fa-twitter"></i></a>
+      <a href="" class="w3-bar-item w3-buttin"><i class="fa fa-instagram"></i></a>
+      <a href="" class="w3-bar-item w3-buttin"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="https://t4.ftcdn.net/jpg/04/79/11/15/360_F_479111533_x1jMCu0ulaxwCk4rZdpD2JGelIXCU92F.jpg" alt="customer care" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Beyond Efficiency.</b><br>
+        <b>Superior Customer Service</b></span> </h1>
+  </div>
+</header>
+
+<!-- The Contact Section -->
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+  <h2 class="w3-wide w3-center">CONTACT</h2>
+  <p class="w3-opacity w3-center"><i>Let's get in touch!</i></p>
+  <div class="w3-row w3-padding-32">
+    <div class="w3-col m6 w3-large w3-margin-bottom">
+      <i class="fa fa-map-marker" style="width:30px"></i> Chennai, India<br>
+      <i class="fa fa-phone" style="width:30px"></i> Phone: +91 876324673<br>
+      <i class="fa fa-envelope" style="width:30px"> </i> Email: aboutTheCare@mail.com<br>
+    </div>
+    <div class="w3-col m6">
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+</section>
+  
+<!-- End page content -->
+</div>
+
+{% endblock %}
+
+</body>
