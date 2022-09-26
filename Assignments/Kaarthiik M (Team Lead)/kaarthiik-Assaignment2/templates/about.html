@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} About us {% endblock %}</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <style>
+        body {font-family: "Times New Roman", Georgia, Serif;}
+        h1, h2, h3, h4, h5, h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+        }
+        
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+  {% block content %}
+    <!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="http://127.0.0.1:5000/" class="w3-bar-item w3-button"><b>About</b> The Ocean</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+          <a href="http://127.0.0.1:5000/home" class="w3-bar-item w3-button">Home</a>
+          <a href="http://127.0.0.1:5000/signin" class="w3-bar-item w3-button">SignIn</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+
+    <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="6000.webp" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Intrested in ocean?</h1><br>
+      <h5 class="w3-center">EXPLORE OCEAN</h5>
+      <p class="w3-large">The ocean (also the sea or the world ocean) is the body of salt water that covers approximately 70.8% of the surface of Earth and contains 97% of Earth's water.[1] An ocean can also refer to any of the large bodies of water into which the world ocean is conventionally divided.[2] Separate names are used to identify five different areas of the ocean: Pacific (the largest), Atlantic, Indian, Southern (Antarctic), and Arctic (the smallest).[3][4] Seawater covers approximately 361,000,000 km2 (139,000,000 sq mi) of the planet. The ocean is the principal component of Earth's hydrosphere, and therefore integral to life on Earth. Acting as a huge heat reservoir, the ocean influences climate and weather patterns, the carbon cycle, and the water cycle.
+      </p>
+      
+    </div>
+  </div>
+  
+  <hr>
+  {% endblock %}
+
+</body>
+</html>
