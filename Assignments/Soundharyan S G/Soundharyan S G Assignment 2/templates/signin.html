@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>{% block title %} SignIn Page {% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	<link rel="stylesheet" href="{{ url_for('static', filename='login.css')}}">
+
+	</head>
+	<body class="img js-fullheight" style="background-image: url(https://images.unsplash.com/photo-1553775282-20af80779df7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);">
+		{% block content %}
+    <!-- Navbar (sit on top) -->
+	<div class="w3-top">
+		<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+		  <a href="http://127.0.0.1:5000/" class="w3-bar-item w3-button"><b>About</b> The Care</a>
+		  <!-- Float links to the right. Hide them on small screens -->
+		  <div class="w3-right w3-hide-small">
+			  <a href="http://127.0.0.1:5000/about" class="w3-bar-item w3-button">About</a>
+			  <a href="http://127.0.0.1:5000/signup" class="w3-bar-item w3-button">Signup</a>
+			<a href="http://127.0.0.1:5000/#contact" class="w3-bar-item w3-button">Contact</a>
+		  </div>
+		</div>
+	  </div>
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Sign In </h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<div class="login-wrap p-0">
+		      	<h3 class="mb-4 text-center">Have an account?</h3>
+		      	<form action="#" class="signin-form">
+		      		<div class="form-group">
+		      			<input type="text" class="form-control" placeholder="Username" required>
+		      		</div>
+	            <div class="form-group">
+	              <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+	            </div>
+	            <div class="form-group">
+	            	<button type="submit" class="form-control btn btn-primary submit px-3 ">Sign In</button>
+	            </div>
+	            <div class="form-group d-md-flex">
+	            	<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+						<label class="form-check-label" for="flexCheckChecked">
+						  Remeber me
+						</label>
+					  </div>
+								<div class="w-50 text-md-right">
+									<a href="#" style="color: #fff">Forgot Password</a>
+								</div>
+	            </div>
+	          </form>
+	          <p class="w-100 text-center">&mdash; Or Sign up With &mdash;</p>
+	          <div class="social d-flex text-center">
+	          	<a href="http://127.0.0.1:5000/signup" class="px-2 py-2 mr-md-1 rounded"> SIGN UP</a>
+	          </div>
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% endblock %}
+	
+
+	</body>
+</html>
+
