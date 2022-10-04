@@ -1,10 +1,11 @@
 from flask import Flask, request,render_template, url_for
 import ibm_db
 
-conn = ibm_db.connect("DATABASE=bludb; HOSTNAME=9938aec0-8105-433e-8bf9-0fbb7e483086.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud; PORT= 32459; SECURITY =SSL;UID=rmf92833; PWD=klHw5XHWgYzks5ql;",'','')
+conn = ibm_db.connect("DATABASE=bludb; HOSTNAME=3883e7e4-18f5-4afe-be8c-fa31c41761d2.bs2io90l08kqb1od8lcg.databases.appdomain.cloud;PORT=31498;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=lhv06993; PWD=xxFeU2lKr0QtvjPL",'','')
 
-# check=ibm_db.active(conn)
-# print(check)
+check=ibm_db.active(conn)
+print(check)
+print("Connection successful....")
 
 app = Flask(__name__,template_folder="templates")
 
@@ -31,7 +32,7 @@ def addsignin():
         ibm_db.bind_param(stmt,1,email)
         ibm_db.execute(stmt)
         acc = ibm_db.fetch_assoc(stmt)
-        fname = ibm_db.result(stmt,'NAME')
+        name = ibm_db.result(stmt,'NAME')
 
         if acc:
             if(str(cpass)) == str(acc['CPASS'].strip()):
