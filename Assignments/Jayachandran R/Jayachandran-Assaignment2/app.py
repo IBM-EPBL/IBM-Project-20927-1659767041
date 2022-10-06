@@ -27,7 +27,7 @@ def addsignin():
         email = request.form["email"]
         cpass  = request.form["cpass"]
         
-        sel_sql = "SELECT * FROM Sample WHERE EMAIL=?"
+        sql = "SELECT * FROM Sample WHERE EMAIL=?"
         stmt = ibm_db.prepare(conn,sel_sql)
         ibm_db.bind_param(stmt,1,email)
         ibm_db.execute(stmt)
@@ -36,12 +36,12 @@ def addsignin():
 
         if acc:
             if(str(cpass)) == str(acc['CPASS'].strip()):
-                return render_template("home.html",msg="Welcome,",fname = fname)
+                return render_template("home.html",msg="Welcome,",name = name)
             else:
                 return render_template("signin.html",msg="Invalid E-Mail or Password")
 
         else:
-            return render_template("signup.html",msg="Not a Member First SignUp")
+            return render_template("signup.html",msg="Not a Member SignUp")
 
 @app.route('/signup',methods=['POST','GET'])
 def signup(): 
@@ -55,7 +55,7 @@ def addsignup():
         cpass  = request.form["cpass"]
         ccpass = request.form["ccpass"]
 
-        sel_sql = "SELECT * FROM Sample WHERE EMAIL=?"
+        sql = "SELECT * FROM Sample WHERE EMAIL=?"
         stmt = ibm_db.prepare(conn,sel_sql)
         ibm_db.bind_param(stmt,1,email)
         ibm_db.execute(stmt)
@@ -65,7 +65,7 @@ def addsignup():
             return render_template("signin.html",txt="Your are a Existing User so Sign In")
         
         else:
-            ins_sql = "INSERT INTO Sample VALUES(?,?,?,?,?,?)"
+            ins_sql = "INSERT INTO Sample VALUES(?,?,?,?)"
             pstmt = ibm_db.prepare(conn,ins_sql)
             ibm_db.bind_param(pstmt,1,name)
             ibm_db.bind_param(pstmt,2,email)
