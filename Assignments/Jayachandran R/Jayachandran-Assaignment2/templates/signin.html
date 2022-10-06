@@ -16,7 +16,11 @@
 	</head>
 	<body class="img js-fullheight" style="background-image: url(https://media.istockphoto.com/photos/call-center-workers-picture-id903568822?b=1&k=20&m=903568822&s=612x612&w=0&h=dejYDUqlmEKNrAki7a3XQIGlcAkz8EoSJYDErVfcy0I=);">
 		{% block content %}
+        <h5>{{ txt }}</h5>
+        <p>{{ msg }}</p>
+
     <!-- Navbar (sit on top) -->
+
 	<div class="w3-top">
 		<div class="w3-bar w3-white w3-wide w3-padding w3-card">
 		  <a href="http://127.0.0.1:5000/" class="w3-bar-item w3-button"><b>About</b> The Care</a>
@@ -40,12 +44,14 @@
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
 		      	<h3 class="mb-4 text-center">Have an account?</h3>
-		      	<form action="#" class="signin-form">
+		      	<form action="#" class="signin-form" action="{{ url_for('addsignin') }}" method="post">
 		      		<div class="form-group">
-		      			<input type="text" class="form-control" placeholder="Username" required>
+                        <label for="email"></label>
+		      			<input type="text" name="email" class="form-control" placeholder="Email" required>
 		      		</div>
 	            <div class="form-group">
-	              <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+                    <label for="cpass"></label>
+	              <input id="password-field" name="cpass" type="password" class="form-control" placeholder="Password" required>
 	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 	            </div>
 	            <div class="form-group">
@@ -78,4 +84,3 @@
 
 	</body>
 </html>
-
