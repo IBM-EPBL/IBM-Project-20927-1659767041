@@ -1,7 +1,7 @@
 from flask import Flask, request,render_template, url_for
 import ibm_db
 
-conn = ibm_db.connect("DATABASE=bludb; HOSTNAME=3883e7e4-18f5-4afe-be8c-fa31c41761d2.bs2io90l08kqb1od8lcg.databases.appdomain.cloud;PORT=31498;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=lhv06993; PWD=xxFeU2lKr0QtvjPL",'','')
+conn = ibm_db.connect("DATABASE=bludb; HOSTNAME=3883e7e4-18f5-4afe-be8c-fa31c41761d2.bs2io90l08kqb1od8lcg.databases.appdomain.cloud;PORT=31498;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=lhv06993; PWD=u0e19sJ5FZcYvmiu",'','')
 
 check=ibm_db.active(conn)
 print(check)
