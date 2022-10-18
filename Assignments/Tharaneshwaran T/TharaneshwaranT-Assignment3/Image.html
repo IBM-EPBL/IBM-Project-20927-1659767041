@@ -1,0 +1,100 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    
+    <!-- Meta -->
+    <title>Displaying Images</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free HTML template">
+    <meta name="keywords" content="HTML, template, free">
+    <meta name="author" content="Nicola Tolin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    
+    
+    <link href="https://tharaneshwarant-assignment3.s3.jp-tok.cloud-object-storage.appdomain.cloud/image.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+    
+    <!-- Header -->
+    <div class="header" id="myHeader">
+      <h1>Hi, I'm Tharaneshwaran T</h1>
+      <p>Music is the definition of the art of sound in time that expresses ideas and emotions in significant forms through the elements of rhythm, melody, harmony, and color</p>
+      <button class="btn" onclick="one()">1</button>
+      <button class="btn active" onclick="two()">2</button>
+      <button class="btn" onclick="four()">4</button>
+    </div>
+    
+    <!-- Photo Grid -->
+    <div class="row"> 
+      <div class="column">
+        <img src="https://tharaneshwarant-assignment3.s3.jp-tok.cloud-object-storage.appdomain.cloud/Music-imgs/bruno-emmanuelle-Gi6-m_t_W-E-unsplash.jpg" style="width:100%">
+        
+      </div>
+      <div class="column">
+        <img src="https://tharaneshwarant-assignment3.s3.jp-tok.cloud-object-storage.appdomain.cloud/Music-imgs/daniel-schludi-mbGxz7pt0jM-unsplash.jpg" style="width:100%">
+        
+      </div>  
+      <div class="column">
+        <img src="https://tharaneshwarant-assignment3.s3.jp-tok.cloud-object-storage.appdomain.cloud/Music-imgs/ilyuza-mingazova-GUx0VBmMgQk-unsplash.jpg" style="width:100%">
+        
+      </div>
+      <div class="column">
+        <img src="https://tharaneshwarant-assignment3.s3.jp-tok.cloud-object-storage.appdomain.cloud/Music-imgs/paulette-wooten-FMiczIq8orU-unsplash.jpg" style="width:100%">
+        
+        
+      </div>
+      <div class="column">
+        
+        <img src="https://tharaneshwarant-assignment3.s3.jp-tok.cloud-object-storage.appdomain.cloud/Music-imgs/roman-melnychuk-j5I80kLda3c-unsplash.jpg" style="width:100%">
+        
+      </div>
+    </div>
+    
+    <script>
+    // Get the elements with class="column"
+    var elements = document.getElementsByClassName("column");
+    
+    // Declare a loop variable
+    var i;
+    
+    // Full-width images
+    function one() {
+        for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "100%";  // IE10
+        elements[i].style.flex = "100%";
+      }
+    }
+    
+    // Two images side by side
+    function two() {
+      for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "50%";  // IE10
+        elements[i].style.flex = "50%";
+      }
+    }
+    
+    // Four images side by side
+    function four() {
+      for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "25%";  // IE10
+        elements[i].style.flex = "25%";
+      }
+    }
+    
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myHeader");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    
+    </body>
+    </html>
+    
