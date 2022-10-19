@@ -78,18 +78,18 @@
 </div>
 
 <script>
-    window.watsonAssistantChatOptions = {
-      integrationID: "046ee918-9abe-4ef5-b2fb-740ed4736537", // The ID of this integration.
-      region: "jp-tok", // The region your integration is hosted in.
-      serviceInstanceID: "0432cb73-fb6e-435a-97b0-21601a6636e4", // The ID of your service instance.
-      onLoad: function(instance) { instance.render(); }
-    };
-    setTimeout(function(){
-      const t=document.createElement('script');
-      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-      document.head.appendChild(t);
-    });
-  </script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "3732d32d-c79c-4785-bc85-32bebd9175b8", // The ID of this integration.
+    region: "jp-tok", // The region your integration is hosted in.
+    serviceInstanceID: "92a50c47-3f7f-4924-bdc1-b9c209dfb098", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
 
 {% endblock %}
 
