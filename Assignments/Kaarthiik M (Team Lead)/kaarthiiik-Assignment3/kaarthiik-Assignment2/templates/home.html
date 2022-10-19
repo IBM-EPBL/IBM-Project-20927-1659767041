@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{% block title %} Home page {% endblock %}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+    body::-webkit-scrollbar {
+         display: none;
+    }
+</style>
+
+</head>
+<body>
+  {% block content %}
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="http://127.0.0.1:5000/" class="w3-bar-item w3-button"><b>About</b> The Ocean</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+        <a href="http://127.0.0.1:5000/about" class="w3-bar-item w3-button">About</a>
+        <a href="http://127.0.0.1:5000/signin" class="w3-bar-item w3-button">SignIn</a>
+      
+      
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="ocean.jpg" alt="Thalassophile" width="3840" height="2400">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h4 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min">
+     <i>“if the ocean can calm itself,so can you.
+     we are both salt water mixed with air.”</i></span> </h4>
+  </div>
+</header>
+
+
+
+</body>
