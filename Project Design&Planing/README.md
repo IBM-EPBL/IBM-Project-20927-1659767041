@@ -8,7 +8,7 @@
 
 ### PROJECT DESIGN PHASE 1
 - [x]   [Proposed Solution](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/blob/main/Project%20Design%26Planing/Design_Phase_01/Proposed%20Solution.pdf)
-- [x]   [Problem-Solution Fit]()
+- [x]   [Problem-Solution Fit](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/blob/main/Project%20Design%26Planing/Design_Phase_01/Problem-Solution-Fit.pdf)
 - [x]   [Solution Architecture](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/blob/main/Project%20Design%26Planing/Design_Phase_01/Solution%20Architecture.pdf)
 
 
