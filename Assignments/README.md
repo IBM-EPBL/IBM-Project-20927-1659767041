@@ -29,7 +29,7 @@ Develop a sample homepage with html, CSS which should include banner, image & de
 ## TEAM MEMBER'S ASSIGNMENTS
 ####    Kaarthiik M (Team Lead)
 - [x]   [ASSIGNMENT 1](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/tree/main/Assignments/Kaarthiik%20M%20(Team%20Lead)/kaarthiik-Assignment1)
-- [ ]   [ASSIGNMENT 2]()
+- [x]   [ASSIGNMENT 2](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/tree/main/Assignments/Kaarthiik%20M%20(Team%20Lead)/KAARTHIIK-Assignment%202)
 - [x]   [ASSIGNMENT 3](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/tree/main/Assignments/Kaarthiik%20M%20(Team%20Lead)/kaarthiiik-Assignment3)
 - [ ]   [ASSIGNMENT 4]()
 ####    Jayachandran R
