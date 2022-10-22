@@ -39,10 +39,10 @@ IBM Cloud,HTML,Javascript,IBM Cloud Object Storage,Python-Flask,Kubernetes,Docke
 - [x]   Brainstorm
 - [x]   Problem Statement
 
- [PROJECT DESIGN PHASE 01]()
-- [ ]   Proposed Solution
-- [ ]   Problem-Solution Fit
-- [ ]   Solution Architecture
+ [PROJECT DESIGN PHASE 01](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/tree/main/Project%20Design%26Planing/Design_Phase_01)
+- [x]   Proposed Solution
+- [x]   Problem-Solution Fit
+- [x]   Solution Architecture
 
 [PROJECT DESIGN PHASE 02]()
 - [ ]   Solution Requirements
