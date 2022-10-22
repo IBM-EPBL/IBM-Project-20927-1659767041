@@ -50,7 +50,7 @@ IBM Cloud,HTML,Javascript,IBM Cloud Object Storage,Python-Flask,Kubernetes,Docke
 - [ ]   Data Flow Diagrams
 - [ ]   Technology Stack
 
-PROJECT PLANNING
+[PROJECT PLANNING]()
 - [ ]   Planning
 
 ## 
