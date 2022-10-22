@@ -1,4 +1,4 @@
-Mr.chat is a Hospital chatbot 
+# Mr.chat is a Hospital chatbot 
 
 You can ask your queries like "Locate Branches" or "Make Appointment"
 
