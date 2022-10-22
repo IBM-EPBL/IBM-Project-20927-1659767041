@@ -7,9 +7,9 @@
 - [x]   [Brainstorming](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/blob/main/Project%20Design%26Planing/Ideation%20phase/Brainstorming-ideation.pdf)
 
 ### PROJECT DESIGN PHASE 1
-- [ ]   [Proposed Solution]()
-- [ ]   [Problem-Solution Fit]()
-- [ ]   [Solution Architecture]()
+- [x]   [Proposed Solution](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/blob/main/Project%20Design%26Planing/Design_Phase_01/Proposed%20Solution.pdf)
+- [x]   [Problem-Solution Fit]()
+- [x]   [Solution Architecture](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/blob/main/Project%20Design%26Planing/Design_Phase_01/Solution%20Architecture.pdf)
 
 
 ### PROJECT DESIGN PHASE 2
