@@ -15,8 +15,8 @@
 ### PROJECT DESIGN PHASE 2
 - [x]   [Customer Journey Map](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/blob/main/Project%20Design%26Planing/Design_Phase_02/Customer%20Journey%20Map.pdf)
 - [x]   [Solution Requirements](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/blob/main/Project%20Design%26Planing/Design_Phase_02/Solution%20Requirements.pdf)
-- [ ]   [Data flow diagram]()
-- [ ]   [Technology Stack]()
+- [x]   [Data flow diagram](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/blob/main/Project%20Design%26Planing/Design_Phase_02/Data%20Fow%20Diagrams%20and%20User%20stories.pdf)
+- [x]   [Technology Stack](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/blob/main/Project%20Design%26Planing/Design_Phase_02/Technology%20Stack.pdf)
 
 ### PROJECT PLANNING PHASE
 - [ ]   [Project Planning]()
