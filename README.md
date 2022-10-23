@@ -47,8 +47,8 @@ IBM Cloud,HTML,Javascript,IBM Cloud Object Storage,Python-Flask,Kubernetes,Docke
 [PROJECT DESIGN PHASE 02](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/tree/main/Project%20Design%26Planing/Design_Phase_02)
 - [x]   Solution Requirements
 - [x]   Customer Journey Map
-- [ ]   Data Flow Diagrams
-- [ ]   Technology Stack
+- [x]   Data Flow Diagrams
+- [x]   Technology Stack
 
 [PROJECT PLANNING]()
 - [ ]   Planning
