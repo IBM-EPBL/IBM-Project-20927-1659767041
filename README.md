@@ -51,7 +51,10 @@ IBM Cloud,HTML,Javascript,IBM Cloud Object Storage,Python-Flask,Kubernetes,Docke
 - [x]   Technology Stack
 
 [PROJECT PLANNING]()
-- [ ]   Planning
+- [ ]  SPRINT DELIVERY PLAN
+- [x]  MILESTONE & ACTIVITY LIST
+
+
 
 ## 
 Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College
