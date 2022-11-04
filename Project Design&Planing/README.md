@@ -19,4 +19,6 @@
 - [x]   [Technology Stack](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/blob/main/Project%20Design%26Planing/Design_Phase_02/Technology%20Stack.pdf)
 
 ### PROJECT PLANNING PHASE
-- [ ]   [Project Planning]()
+- [x]   [Milestone & Activity List](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/blob/96b50d6974682e8a1d78ce495b4ce0cd7d47e55c/Project%20Design&Planing/Planning%20Phase/Milestone%20&Activity%20List.pdf)
+- [ ]   [Sprint Delivery plan]()
+
