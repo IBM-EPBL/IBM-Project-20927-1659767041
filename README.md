@@ -50,9 +50,11 @@ IBM Cloud,HTML,Javascript,IBM Cloud Object Storage,Python-Flask,Kubernetes,Docke
 - [x]   Data Flow Diagrams
 - [x]   Technology Stack
 
-[PROJECT PLANNING]()
-- [ ]  SPRINT DELIVERY PLAN
-- [x]  MILESTONE & ACTIVITY LIST
+[PROJECT PLANNING](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/tree/main/Project%20Design%26Planing/Planning%20Phase)
+- [x]  Milestone & Activity List
+- [x]  Sprint Delivery plan
+- [x]  JIRA Project Files
+
 
 
 
