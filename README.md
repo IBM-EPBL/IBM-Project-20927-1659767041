@@ -31,6 +31,8 @@ IBM Cloud,HTML,Javascript,IBM Cloud Object Storage,Python-Flask,Kubernetes,Docke
 - [@Tharaneshwaran T](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/tree/main/Assignments/Tharaneshwaran%20T)
 - [@Soundharyan S G](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/tree/main/Assignments/Soundharyan%20S%20G)
 
+## Environmental setup
+- [x] [Environmental setup](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/blob/main/Environmental%20setup/Environmental%20Setup.pdf)
 
 ## PROJECT DESIGN & PLANNING
  [IDEATION PHASE](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/tree/main/Project%20Design%26Planing/Ideation%20phase)
@@ -55,7 +57,13 @@ IBM Cloud,HTML,Javascript,IBM Cloud Object Storage,Python-Flask,Kubernetes,Docke
 - [x]  Sprint Delivery plan
 - [x]  JIRA Project Files
 
+[PROJECT DEVELOPMENT PHASE](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/tree/main/Project%20Development%20Phase)
+- [ ]  Sprint-1
+- [ ]  Sprint-2
+- [ ]  Sprint-3
+- [ ]  Sprint-4
 
+[Final Deliverables](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/tree/main/Final%20Deliverables)
 
 
 ## 
