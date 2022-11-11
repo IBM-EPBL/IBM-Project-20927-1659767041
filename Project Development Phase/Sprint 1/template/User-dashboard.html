@@ -1,0 +1,285 @@
+<!-- ==================================
+* Date          : 06-11-2022
+* Team ID       : PNT2022TMID22548
+* Project name  : Customer care registry (ServiceHub)
+* Css name      : Admin-dashboard  CSS
+* File name     : User-dashboard  HTML  Template
+* File size     : 9kb
+* Total lines   : 289
+====================================  -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<!-- bootstrap 1-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<!-- bootstrap 2 -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	
+	<!-- bootstrap javascript -->
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- meta data -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- favicon -->
+	<link
+	rel="shortcut icon"
+	type="image/png"
+	href="{{ url_for('static', filename='assets/img/favicon.png')}}"/>
+
+	<!-- title of site -->
+	<title>{% block title %} User Dashboard {% endblock %}</title>
+
+	<!-- Main css -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/Admin-dashboard.css')}}">
+
+</head>
+<body>
+	{% block content %}
+<!-- Start Top menu -->
+<div class="app">
+	<header class="app-header">
+		<div class="app-header-logo">
+			<div class="logo">
+				<!-- Side Logo -->
+				<span class="logo-icon">
+					<img title="Brand logo" src="{{ url_for('static', filename='assets/img/black-favicon.png')}}" />
+				</span>
+				<!-- logo name -->
+				<h1 title="Brand name" class="logo-title">
+                    ServiceHub
+				</h1>
+			</div>
+		</div>
+		<!-- Top nav bar -->
+		<div class="app-header-navigation">
+			<div class="tabs">
+				<a title="Back to home page" href="{{ url_for('home')}}">
+					Home
+				</a>
+				<a title="View your queries" href="#" class="active">
+					My Queries
+				</a>
+				<a title="Profile" href="{{ url_for('userAccount')}}">
+					My Account
+				</a>
+				<a title="chat with our chatbot for queries" href="#">
+					Chatbot
+				</a>
+			
+			</div>
+		</div>
+		<!-- User profile section -->
+		<div class="app-header-actions">
+			<button class="user-profile">
+				<span title="User name">Gokulchan</span>
+				<span>
+					<img src="{{ url_for('static', filename='assets/img/avatars/1.png')}}" />
+				</span>
+			</button>
+			<!-- Search icon -->
+			<div class="app-header-actions-buttons">
+				<button class="icon-button large">
+					<i class="ph-magnifying-glass"></i>
+				</button>
+			</div>
+		</div>
+		<div class="app-header-mobile">
+			<button class="icon-button large">
+				<i class="ph-list"></i>
+			</button>
+		</div>
+	</header>
+	<!-- End Top menu -->
+
+	<!-- Start Side bar -->
+	<div class="app-body">
+		<div class="app-body-navigation">
+			<nav class="navigation">
+				<a href="#">
+					<i class="ph-browsers"></i>
+					<span>Dashboard</span>
+				</a>
+				<a href="{{ url_for('userLogin')}}">
+					<i class="fa fa-user-plus" aria-hidden="true"></i>
+					<span title="New User?">Register</span>
+				</a>
+				<a href="{{ url_for('userLogin')}}">
+					<i class="fa fa-sign-in" aria-hidden="true"></i>
+					<span title="Already a user?">Login</span>
+				</a>
+				<a href="{{ url_for('issuse')}}">
+					<i class="fa fa-plus-circle" aria-hidden="true"></i>
+					<span title="Click to view Admin messages">Create Issuse</span>
+				</a>
+				<a href="{{ url_for('changePassword')}}">
+					<i class="fa fa-key" aria-hidden="true"></i>
+					<span>Change password</span>
+				</a>
+                <a href="{{ url_for('logout')}}">
+					<i class="fa fa-sign-out" aria-hidden="true"></i>
+					<span title="See you">Logout</span>
+				</a>
+			</nav>
+			<!-- Start Copyrigth section -->
+			<footer class="footer">
+				<h1 title="Declaimer">ServiceHub<small>©</small></h1>
+				<div>
+					ServiceHub ©<br />
+					All Rights Reserved 2022
+				</div>
+			</footer>
+			<!-- End Copyrigth section -->
+		</div><!-- End Side bar -->
+
+	<!-- Start main content -->
+		<div class="app-body-main-content">
+			<section class="service-section">
+				<!-- titel -->
+				<h2>User Dashboard</h2>
+				<!-- sUser details area -->
+				<div class="service-section-header">
+					<div class="search-field">
+						<i class="fa fa-id-card-o" aria-hidden="true"></i>
+						<input type="text" value="ID : UID12718">
+					</div>
+					<div class="search-field">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<input type="text" value="Email : gk@thetimes.co.uk">
+					</div>
+					
+				</div>
+				<!-- Note -->
+				<div class="service-section-footer">
+					<p>Note : For general queries kindly use chatbot</p>
+					<p>If your issues not solved Kindly chat with our Admin by clicking add new queries</p>
+				</div>
+			</section>
+			<!-- User's queries raised so far -->
+			<section class="transfer-section">
+				<div class="transfer-section-header">
+					<h2 title="Search your queries">Latest Queries</h2>
+					<div class="filter-options">
+						<p>Filter selected: My recent queries</p>
+						<button class="icon-button">
+							<i title="Sort your queries" class="ph-funnel"></i>
+						</button>
+					</div>
+				</div>
+                <div class="transfer-section-header" style="padding-top: 1%;">
+					<!-- list title -->
+					<dl class="transfer-details">
+                        <div>
+                            <dt>Name</dt>
+                        </div>
+                        <div style="padding-left: 8%;">
+                            <dt>Email</dt>
+                        </div>
+                        <div style="padding-left: 8%;">
+                            <dt>Query</dt>
+                        </div>
+                        <div style="padding-left: 10%;">
+                            <dt>Date</dt>
+                        </div>
+                    </dl>
+				</div>
+				<div class="transfers">
+					<!-- queries details -->
+					<div class="transfers">
+                        <div class="transfer">
+                            <div class="transfer-logo">
+                                <img src="{{ url_for('static', filename='assets/img/avatars/1.png')}}" />
+                            </div>
+                            <dl class="transfer-details">
+                                <div>
+                                    <dt>gokulchan</dt>
+                                    <dd>UID12718</dd>
+                                </div>
+                                <div>
+                                    <dd>gk@thetimes.co.uk</dd>
+                                </div>
+                                <div>
+                                    
+                                    <dd>I am Facing trouble in...</dd>
+                                </div>
+                            </dl>
+                            <div class="transfer-number">
+                                10/07/2022
+                            </div>
+                        </div>
+                        <div class="transfers">
+                            <div class="transfer">
+                                <div class="transfer-logo">
+                                    <img src="{{ url_for('static', filename='assets/img/avatars/1.png')}}" />
+                                </div>
+                                <dl class="transfer-details">
+                                    <div>
+                                        <dt>gokulchan</dt>
+                                        <dd>UID12718</dd>
+                                    </div>
+                                    <div>
+                                        <dd>gk@thetimes.co.uk</dd>
+                                    </div>
+                                    <div>
+                                        
+                                        <dd>Help me to solve this problem...</dd>
+                                    </div>
+                                </dl>
+                                <div class="transfer-number">
+                                    10/02/2022
+                                </div>
+                            </div>
+				</div>
+			</section>
+		</div>
+		<!-- End User's queries section -->
+
+		<!-- User satisfaction progress bar -->
+		<div class="app-body-sidebar">
+			<section class="question-section">
+				<h2 title="your happiness">My happiness😃</h2>
+				<div class="set-size charts-container">
+                    
+                    <div class="pie-wrapper progress-90 style-2">
+                      <span title="your happiness progress bar" class="label">90<span class="smaller">%</span></span>
+                      <div class="pie">
+                        <div class="left-side half-circle"></div>
+                        <div class="right-side half-circle"></div>
+                      </div>
+                      <div class="shadow"></div>
+                    </div>
+                  </div>
+            <!-- End User satisfaction progress bar   -->
+                
+			<!-- Start feedback section -->
+				<div class="faq">
+					<p>How was our service?</p>
+					<div>
+						<label>Feedback</label>
+						<input type="text" placeholder="Type here">
+					</div>
+				</div>
+				<div class="question-section-footer">
+					<button title="Send your valuable feedback" class="save-button">
+						Send
+					</button>
+					<button class="settings-button">
+						<i class="ph-gear"></i>
+						<span>More settings</span>
+					</button>
+				</div>
+				<!-- End feedback section -->
+			</section>
+		</div>
+	</div>
+	<!-- End of content -->
+</div>
+<!-- partial -->
+  <script src='https://unpkg.com/phosphor-icons'></script>
+  {% endblock %}
+</body>
+</html>

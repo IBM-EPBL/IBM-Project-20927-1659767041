@@ -1,0 +1,430 @@
+<!-- ==================================
+* Date          : 06-11-2022
+* Team ID       : PNT2022TMID22548
+* Project name  : Customer care registry (ServiceHub)
+* Css name      : Style  
+* File name     : Home  HTML  Template
+* File size     : 17kb
+* Total lines   : 470
+====================================  -->
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+		<!-- jquery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		<!-- fontawesome bootstrap -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/linearicons.css')}}">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css')}}">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css')}}">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootsnav.css')}}" >	
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}">
+        
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        
+        <!-- title of site -->
+        <title>{% block title %} Home page {% endblock %}</title>
+
+        <!-- favicon -->
+  	<link
+      rel="shortcut icon"
+      type="image/png"
+      href="{{ url_for('static', filename='assets/img/favicon.png')}}"/>
+       
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		{% block content %}
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+		
+	
+		<!--welcome-hero start -->
+		<header id="home" class="welcome-hero">
+
+			<div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+				
+				<!--/.carousel-inner -->
+				<div class="carousel-inner" role="listbox">
+					<!-- .item -->
+					<div class="item active">
+						<div class="single-slide-item slide1">
+							<div class="container">
+								<div class="welcome-hero-content">
+									<div class="row">
+										<div class="col-sm-7">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-txt">
+													<h4>We Believe</h4>
+													<h2>To keep a customer demands as much skill as to win one.</h2>
+													<p>
+														We describes how people are treated when they interact with a brand. This includes all experiences with the company and its employees before, during, and after a purchase. ServiceHub is an important aspect of customer service because it fosters an emotional connection with the brand's community. 
+													</p>
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+										<div class="col-sm-5">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-img">
+													<img src="{{ url_for('static', filename='assets/img/pics/pillustration.png')}}" alt="slider image">
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+									</div><!--/.row-->
+								</div><!--/.welcome-hero-content-->
+							</div><!-- /.container-->
+						</div><!-- /.single-slide-item-->
+
+					</div><!-- /.item .active-->
+				</div><!-- /.carousel-inner-->
+
+			</div><!--/#header-carousel-->
+
+			<!-- top-area Start -->
+			<div class="top-area">
+				<div class="header-area">
+					<!-- Start Navigation -->
+				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+				        <!-- Start Top Search -->
+				        <div class="top-search">
+				            <div class="container">
+				                <div class="input-group">
+				                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+				                    <input type="text" class="form-control" placeholder="Search...">
+				                    <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+				                </div>
+				            </div>
+				        </div>
+				        <!-- End Top Search -->
+
+				        <div class="container">            
+				            <!-- Start Atribute Navigation -->
+				            <div class="attr-nav">
+				                <ul>
+				                	<li class="search">
+				                		<a href="#"><span><i class="fa fa-search" aria-hidden="true"></i></span></a>
+				                	</li><!--/.search-->
+				                    <li class="dropdown">
+				                        
+				            </div><!--/.attr-nav-->
+				            <!-- End Atribute Navigation -->
+
+				            <!-- Start Header Navigation -->
+				            <div class="navbar-header">
+				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+				                    <i class="fa fa-bars"></i>
+				                </button>
+				                <a class="navbar-brand container" href="#"><img style="
+									max-height: 40px;
+									max-width: 200px;
+									vertical-align: top;" src="{{ url_for('static', filename='assets/img/Logo.png')}}" alt="logo"></a>
+
+				            </div><!--/.navbar-header-->
+				            <!-- End Header Navigation -->
+
+				            <!-- Collect the nav links, forms, and other content for toggling -->
+				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+				                <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+				                    <li class="active"><a href="#home">home</a></li>
+				                    <li><a href="{{ url_for('adminLogin')}}" target="_blank">Admin sign-in</a></li>
+				                    <li><a href="{{ url_for('agentLogin')}}" target="_blank">Agent sign-up</a></li>
+									<li><a href="{{ url_for('userLogin')}}" target="_blank">User sign-up</a></li>
+				                </ul><!--/.nav -->
+				            </div><!-- /.navbar-collapse -->
+				        </div><!--/.container-->
+				    </nav><!--/nav-->
+				    <!-- End Navigation -->
+				</div><!--/.header-area-->
+			    <div class="clearfix"></div>
+
+			</div><!-- /.top-area-->
+			<!-- top-area End -->
+
+		</header><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+				</section><!--/.populer-products-->
+		<!--populer-products end-->
+		<!--Testimonials -->
+		<section id="Testimonials" class="Testimonials">
+			<div class="container">
+				<div class="section-header">
+					<h2>Testimonials</h2>
+				</div><!--/.section-header-->
+				<div class="Testimonials-content">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="single-Testimonials">
+								
+								<div class="single-Testimonials-txt text-center">
+									<img src="{{ url_for('static', filename='assets/img/avatars/4.png')}}" alt="Testimonials image">
+									<h1 style="padding-top: 12px;">Client-1</h1><br>
+									<p>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<span class="spacial-Testimonials-icon"><i class="fa fa-star"></i></span>
+										
+									</p>
+									
+									<h3>Amazing application</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-Testimonials">
+								
+								<div class="single-Testimonials-txt text-center">
+									<img src="{{ url_for('static', filename='assets/img/avatars/5.png')}}" alt="Testimonials image">
+									<h1 style="padding-top: 12px;">Client-2</h1><br>
+									<p>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<span class="spacial-Testimonials-icon"><i class="fa fa-star"></i></span>
+										
+									</p>
+									
+									<h3>Great application</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-Testimonials">
+								
+								<div class="single-Testimonials-txt text-center">
+									<img src="{{ url_for('static', filename='assets/img/avatars/6.png')}}" alt="Testimonials image">
+									<h1 style="padding-top: 12px;">Client-3</h1><br>
+									<p>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<span class="spacial-Testimonials-icon"><i class="fa fa-star"></i></span>
+										
+									</p>
+									
+									<h3>Fantastic application</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-Testimonials">
+								
+								<div class="single-Testimonials-txt text-center">
+									<img src="{{ url_for('static', filename='assets/img/avatars/7.png')}}" alt="Testimonials image">
+									<h1 style="padding-top: 12px;">Client-4</h1><br>
+									<p>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<span class="spacial-Testimonials-icon"><i class="fa fa-star"></i></span>
+										
+									</p>
+									
+									<h3>The UI is so awesome, I love it</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.Testimonials-->
+		<!--Testimonials end -->
+
+
+	<!--/.carousel-inner -->
+	<div class="carousel-inner" role="listbox">
+		<!-- .item -->
+		<div class="item active">
+			<div class="single-slide-item slide1">
+				<div class="container">
+					<div class="welcome-hero-content">
+						<div class="row">
+							<div class="col-sm-7">
+								<div class="single-welcome-hero">
+									<div class="welcome-hero-txt">
+									<h2 id="about">About us</h2>
+									<p>
+										One of the best ways to foster a relationship is to personalize the service experience. When my team provides a personalized response, customers become more engaged with the interaction.
+
+										That's because customer feel more valued by your business. customer are not being rushed through as another service case that needs to be closed. Taking the time to craft a thoughtful response is an excellent way to demonstrate customer care.
+
+										ServiceHub does exactly this with its service platform team. In fact, we created a dedicated dashboard for responding to customer messages. It’ll respond to customer questions and complaints with creative, customized solutions. For example, one customer messaged that they liked the dashboard but was still learning how to use it. So, ServiceHub responded with a special dashboard that welcomed the new user. 
+									</p>
+								</div><!--/.welcome-hero-txt-->
+							</div><!--/.single-welcome-hero-->
+						</div><!--/.col-->
+						<div class="col-sm-5">
+							<div class="single-welcome-hero">
+								<div class="welcome-hero-img">
+									<img src="{{ url_for('static', filename='assets/img/pics/peoples.jpg')}}" alt="slider image">
+								</div><!--/.welcome-hero-txt-->
+							</div><!--/.single-welcome-hero-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.welcome-hero-content-->
+			</div><!-- /.container-->
+		</div><!-- /.single-slide-item-->
+
+	</div><!-- /.item .active-->
+</div><!-- /.carousel-inner-->
+
+		<!--newsletter start -->
+		<section id="newsletter"  class="newsletter">
+			<div class="container">
+				<div class="hm-footer-details">
+					<div class="row">
+						<div class=" col-md-3 col-sm-6 col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>User quick links</h4>
+								</div><!--/.hm-foot-title-->
+								<div class="hm-foot-menu">
+									<ul>
+										<li><a href="{{ url_for('userLogin')}}" target="_blank">Sing-up</a></li><!--/li-->
+										<li><a href="{{ url_for('userLogin')}}" target="_blank">Sign-in</a></li><!--/li-->
+										<li><a href="{{ url_for('userDashboard')}}" target="_blank">dashboard</a></li><!--/li-->
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-menu-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+						<div class=" col-md-3 col-sm-6 col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>Admin quick links</h4>
+								</div><!--/.hm-foot-title-->
+								<div class="hm-foot-menu">
+									<ul>
+										<li><a href="{{ url_for('adminLogin')}}" target="_blank">Sign-in</a></li><!--/li-->
+										<li><a href="{{ url_for('adminDashboard')}}" target="_blank">dashboard</a></li><!--/li-->
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-menu-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+						<div class=" col-md-3 col-sm-6 col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>Agent quick links</h4>
+								</div><!--/.hm-foot-title-->
+								<div class="hm-foot-menu">
+									<ul>
+										<li><a href="{{ url_for('agentLogin')}}" target="_blank">Sign-in</a></li><!--/li-->
+										<li><a href="{{ url_for('agentDashboard')}}" target="_blank">dashboard</a></li><!--/li-->
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-menu-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+
+						<div class=" col-md-3 col-sm-6  col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>newsletter</h4>
+								</div><!--/.hm-foot-title-->
+								<div class="hm-foot-para">
+									<p>
+										Subscribe  to get latest news,update and information.
+									</p>
+								</div><!--/.hm-foot-para-->
+								<div class="hm-foot-email">
+									<div class="foot-email-box">
+										<input type="text" class="form-control" placeholder="Enter Email Here....">
+									</div><!--/.foot-email-box-->
+									<div class="foot-email-subscribe">
+										<span><i class="fa fa-location-arrow"></i></span>
+									</div><!--/.foot-email-icon-->
+								</div><!--/.hm-foot-email-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.hm-footer-details-->
+
+			</div><!--/.container-->
+
+		</section><!--/newsletter-->	
+		<!--newsletter end -->
+
+		<!--footer start-->
+		<footer id="footer"  class="footer">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<div class="footer-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>	
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="https://github.com/IBM-EPBL/IBM-Project-20927-1659767041" target="_blank"><i class="fa fa-github"></i></a>
+						<a href="#"><i class="fa fa-spotify"></i></a>	
+					</div>
+				</div><!--/.text-center-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-->
+		<!--footer end-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="{{ url_for('static', filename='js/jquery.js')}}"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+		
+		<!-- bootsnav js -->
+		<script src="{{ url_for('static', filename='js/bootsnav.js')}}"></script>
+
+		<!--owl.carousel.js-->
+        <script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+
+        <!--Custom JS-->
+        <script src="{{ url_for('static', filename='js/custom.js')}}"></script>
+        {% endblock %}
+    </body>
+	
+</html>

@@ -1,0 +1,380 @@
+<!-- ==================================
+* Date          : 06-11-2022
+* Team ID       : PNT2022TMID22548
+* Project name  : Customer care registry (ServiceHub)
+* Css name      : Admin-dashboard  CSS
+* File name     : Admin-dashboard  HTML  Template
+* File size     : 13kb
+* Total lines   : 398
+====================================  -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<!-- bootstrap 1-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<!-- bootstrap 2 -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- meta data -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <!-- title of site -->
+  <title>{% block title %} Admin Dashboard {% endblock %}</title>
+
+	<!-- favicon -->
+	<link
+	rel="shortcut icon"
+	type="image/png"
+	href="{{ url_for('static', filename='assets/img/favicon.png')}}"/>
+
+	<!-- Main css -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/Admin-dashboard.css')}}">
+
+</head>
+<body>
+	{% block content %}
+<!-- Start Top menu -->
+<div class="app">
+	<header class="app-header">
+		<div class="app-header-logo">
+			<!-- Side Logo -->
+			<div class="logo">
+				<span class="logo-icon">
+					<img src="{{ url_for('static', filename='assets/img/black-favicon.png')}}" />
+				</span>
+				<!-- Logo Name -->
+				<h1 class="logo-title">
+                    ServiceHub
+				</h1>
+			</div>
+		</div>
+		<!-- Top nav bar -->
+		<div class="app-header-navigation">
+			<div class="tabs">
+				<a href="{{ url_for('home')}}">
+					Home
+				</a>
+				<a href="#" class="active">
+					Issues
+				</a>
+				<a href="#">
+					Chatbot
+				</a>
+			</div>
+		</div>
+		<!-- Admin profile section -->
+		<div class="app-header-actions">
+			<button class="user-profile">
+				<span>Tharaneshwaran</span>
+				<span>
+					<img src="{{ url_for('static', filename='assets/img/avatars/7.png')}}" />
+				</span>
+			</button>
+			<!-- Search icon -->
+			<div class="app-header-actions-buttons">
+				<!-- Notification icon -->
+				<button class="icon-button large">
+					<i class="ph-bell"></i>
+				</button>
+			</div>
+		</div>
+		<div class="app-header-mobile">
+			<button class="icon-button large">
+				<i class="ph-list"></i>
+			</button>
+		</div>
+		<!-- End Top menu -->
+
+	<!-- Start Side bar -->
+	</header>
+	<div class="app-body">
+		<div class="app-body-navigation">
+			<nav class="navigation">
+				<a href="#">
+					<i class="ph-browsers"></i>
+					<span>Dashboard</span>
+				</a>
+				<a href="{{ url_for('adminLogin')}}" target="_blank">
+					<i class="fa fa-sign-in" aria-hidden="true"></i>
+					<span>Login</span>
+				</a>
+				<a href="{{ url_for('changePassword')}}">
+					<i class="fa fa-key" aria-hidden="true"></i>
+					<span>Change password</span>
+				</a>
+                <a href="{{ url_for('logout')}}">
+					<i class="fa fa-sign-out" aria-hidden="true"></i>
+					<span>Logout</span>
+				</a>
+			</nav>
+			<!-- End Side bar -->
+
+			<!-- Start Copyrigth section -->
+			<footer class="footer">
+				<h1>ServiceHub<small>©</small></h1>
+				<div>
+					ServiceHub ©<br />
+					All Rights Reserved 2022
+				</div>
+			</footer>
+			<!-- End Copyrigth section -->
+		</div><!-- End Side bar -->
+
+		<!-- Start main content -->
+		<div class="app-body-main-content">
+			<section class="service-section">
+				<!-- titel -->
+				<h2>Admin Dashboard</h2>
+				<!-- Search User area  -->
+				<div class="service-section-header">
+					<div class="search-field">
+						<i class="ph-magnifying-glass"></i>
+						<input type="text" placeholder="User ID">
+					</div>
+					<div class="search-field">
+						<i class="fa fa-user-o" aria-hidden="true"></i>
+						<input type="text" placeholder="User name">
+					</div>
+					<button class="flat-button">
+						Search
+					</button>
+				</div>
+				<div class="mobile-only">
+					<button class="flat-button">
+						Toggle search
+					</button>
+				</div>
+				<!-- Queries card -->
+				<div class="tiles">
+					<article class="tile">
+						<div class="tile-header">
+							<i class="fa fa-users" aria-hidden="true"></i>
+							<h3>
+								<span>Kaarthiik</span>
+								<span>AG12734</span>
+							</h3>
+						</div>
+						<a href="#">
+							<span>Assign agent</span>
+							<span class="icon-button">
+								<i class="fa fa-paper-plane" aria-hidden="true"></i>
+							</span>
+						</a>
+					</article>
+					<article class="tile">
+						<div class="tile-header">
+							<i class="fa fa-users" aria-hidden="true"></i>
+							<h3>
+								<span>Jayachandran</span>
+								<span>AG12736</span>
+							</h3>
+						</div>
+						<a href="#">
+							<span>Assign agent</span>
+							<span class="icon-button">
+								<i class="fa fa-paper-plane" aria-hidden="true"></i>
+							</span>
+						</a>
+					</article>
+					<article class="tile">
+						<div class="tile-header">
+							<i class="fa fa-users" aria-hidden="true"></i>
+							<h3>
+								<span>Soundharyan</span>
+								<span>AG12735</span>
+							</h3>
+						</div>
+						<a href="#">
+							<span>Assign agent</span>
+							<span class="icon-button">
+								<i class="fa fa-paper-plane" aria-hidden="true"></i>
+							</span>
+						</a>
+					</article>
+				</div>
+				<!-- End Queries card -->
+				<!-- declaimer -->
+				<div class="service-section-footer">
+					<p>Services are providing according to the current Query of the Customer.</p>
+				</div>
+			</section>
+			<!-- End main content -->
+
+			<!-- Start User queries content -->
+			<section class="transfer-section">
+				<div class="transfer-section-header">
+					<h2>Latest Queries</h2>
+					<div class="filter-options">
+						<p>Filter selected: recent queries</p>
+						<button class="icon-button">
+							<i class="ph-funnel"></i>
+						</button>
+					</div>
+				</div>
+                <div class="transfer-section-header" style="padding-top: 1%;">
+					<!-- Sub title -->
+					<dl class="transfer-details">
+                        <div>
+                            <dt>Name</dt>
+                        </div>
+                        <div style="padding-left: 8%;">
+                            <dt>Email</dt>
+                        </div>
+                        <div style="padding-left: 8%;">
+                            <dt>Issue</dt>
+                        </div>
+                        <div style="padding-left: 10%;">
+                            <dt>Date</dt>
+                        </div>
+                    </dl>
+				</div>
+				<!-- Start User details with queries -->
+				<div class="transfers">
+					<div class="transfer">
+						<div class="transfer-logo">
+							<img src="{{ url_for('static', filename='assets/img/avatars/2.png')}}" />
+						</div>
+						<dl class="transfer-details">
+							<div>
+								<dt>chipwood</dt>
+                                <dd>UID12736</dd>
+							</div>
+							<div>
+								<dd>chip@sbwire.com</dd>
+							</div>
+							<div>
+								<dd>Kindly solve this problem...</dd>
+							</div>
+						</dl>
+						<div class="transfer-number">
+							10/07/2022
+						</div>
+					</div>
+					<div class="transfers">
+                        <div class="transfer">
+                            <div class="transfer-logo">
+                                <img src="{{ url_for('static', filename='assets/img/avatars/1.png')}}" />
+                            </div>
+                            <dl class="transfer-details">
+                                <div>
+                                    <dt>gokulchan</dt>
+                                    <dd>UID12718</dd>
+                                </div>
+                                <div>
+                                    <dd>gk@thetimes.co.uk</dd>
+                                </div>
+                                <div>
+                                    <dd>I am Facing trouble in...</dd>
+                                </div>
+                            </dl>
+                            <div class="transfer-number">
+                                10/07/2022
+                            </div>
+                        </div>
+                        <div class="transfers">
+                            <div class="transfer">
+                                <div class="transfer-logo">
+                                    <img src="{{ url_for('static', filename='assets/img/avatars/3.png')}}" />
+                                </div>
+                                <dl class="transfer-details">
+                                    <div>
+                                        <dt>soundy</dt>
+                                        <dd>UID12817</dd>
+                                    </div>
+                                    <div>
+                                        <dd>soundy6@163.com</dd>
+                                    </div>
+                                    <div>
+                                        <dd>I don't know how to...</dd>
+                                    </div>
+                                </dl>
+                                <div class="transfer-number">
+                                    10/07/2022
+                                </div>
+                            </div>
+                            <div class="transfers">
+                                <div class="transfer">
+                                    <div class="transfer-logo">
+                                        <img src="{{ url_for('static', filename='assets/img/avatars/8.png')}}" />
+                                    </div>
+                                    <dl class="transfer-details">
+                                        <div>
+                                            <dt>tharane</dt>
+                                            <dd>UID12836</dd>
+                                        </div>
+                                        <div>
+                                            <dd>tharan@ifeng.com</dd>
+                                        </div>
+                                        <div>
+                                            
+                                            <dd>Please help me to...</dd>
+                                        </div>
+                                    </dl>
+                                    <div class="transfer-number">
+                                        10/07/2022
+                                    </div>
+                                </div>
+				</div>
+			</section>
+		</div>
+			<!-- End User details with queries -->
+
+			<!-- Start Circular progress bar -->
+		<div class="app-body-sidebar">
+			<section class="question-section">
+				<!-- Progress bar 1 -->
+				<h2>User happiness</h2>
+				<div class="set-size charts-container">
+                    <div class="pie-wrapper progress-75 style-2">
+                      <span class="label">75<span class="smaller">%</span></span>
+                      <div class="pie">
+                        <div class="left-side half-circle"></div>
+                        <div class="right-side half-circle"></div>
+                      </div>
+                      <div class="shadow"></div>
+                    </div>
+                  </div>
+                  <!-- Progress bar 2 -->
+                  <h2 class="search-field ">Service progress</h2>
+				<div class="set-size charts-container">
+                    <div class="pie-wrapper progress-90 style-2">
+                      <span class="label">90<span class="smaller">%</span></span>
+                      <div class="pie">
+                        <div class="left-side half-circle"></div>
+                        <div class="right-side half-circle"></div>
+                      </div>
+                      <div class="shadow"></div>
+                    </div>
+                  </div>
+				  <!-- End Circular progress bar -->
+				  <!-- Start Question section -->
+				<div class="faq">
+					<p>Most frequently asked questions</p>
+					<div>
+						<label>Question</label>
+						<input type="text" placeholder="Type here">
+					</div>
+				</div>
+				<div class="question-section-footer">
+					<button class="save-button">
+						Send
+					</button>
+					<button class="settings-button">
+						<i class="ph-gear"></i>
+						<span>More settings</span>
+					</button>
+				</div>
+				<!-- End Question section -->
+			</section>
+		</div>
+	</div>
+</div>
+<!-- partial js file -->
+  <script src='https://unpkg.com/phosphor-icons'></script>
+  {% endblock %}
+</body>
+</html>
+                               <!-- Thank you -->
