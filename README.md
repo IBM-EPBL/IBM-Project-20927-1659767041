@@ -58,7 +58,7 @@ IBM Cloud,HTML,Javascript,IBM Cloud Object Storage,Python-Flask,Kubernetes,Docke
 - [x]  JIRA Project Files
 
 [PROJECT DEVELOPMENT PHASE](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/tree/main/Project%20Development%20Phase)
-- [ ]  Sprint-1
+- [x]  Sprint-1
 - [ ]  Sprint-2
 - [ ]  Sprint-3
 - [ ]  Sprint-4
