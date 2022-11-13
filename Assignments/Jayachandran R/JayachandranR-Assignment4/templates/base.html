@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Myapp </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <style>
+        .message {
+            padding: 10px;
+            padding-left: 70px;
+            padding-right: 140px;
+            margin: 5px;
+            margin-left: 140px;
+            margin-right: 140px;
+            color: #535353;
+            background-color: #eeeded
+        }
+        nav a {
+            color: #535353;
+            font-size: 25px;
+            margin-left: 50px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .alert {
+            padding: 20px;
+            margin: 5px;
+            color: #000000;
+            background-color: #ececec;
+        }
+
+        
+        .button {
+        background-color:#ffffff; /* Green */
+        border: none;
+        color: rgb(34, 34, 34);
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        }
+
+        .button1 {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #000000;
+        }
+
+        .button1:hover {
+        background-color: #000000;
+        color: white;
+        }
+        input[type=text],textarea {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: #000000;
+        color: #dad6d6;
+        border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body style="font-family: 'IBM Plex Sans', sans-serif;">
+    <nav>
+        <a href="{{ url_for('index') }}">MyApp</a>
+        <a href="{{ url_for('create') }}">Create message</a>
+       
+    </nav>
+    <hr>
+    <div class="content">
+        {% for message in get_flashed_messages() %}
+            <div class="alert">{{ message }}</div>
+        {% endfor %}
+        {% block content %} {% endblock %}
+    </div>
+
+</body>
+</html>
