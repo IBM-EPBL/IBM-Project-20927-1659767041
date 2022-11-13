@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <h1>{% block title %}{% endblock %}</h1>
+    <form method="post" style="text-align: center;">
+        <label for="title">Subject</label>
+        <br>
+        <input type="text" name="title"
+               placeholder="Message title"
+               value="{{ request.form['title'] }}"></input>
+        <br>
+
+        <label for="content">Your message</label>
+        <br>
+        <textarea name="content"
+                  placeholder="Message content"
+                  rows="15"
+                  cols="60"
+                  >{{ request.form['content'] }}</textarea>
+        <br>
+        <button type="submit" class="button button1">Submit</button>
+        
+    </form>
+    <a href="{{ url_for('index') }}" class="button button1">Back to Home</a>
+{% endblock %}
