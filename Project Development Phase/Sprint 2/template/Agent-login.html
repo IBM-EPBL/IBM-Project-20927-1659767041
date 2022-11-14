@@ -1,0 +1,110 @@
+<!-- ==================================
+* Date          : 07-11-2022
+* Team ID       : PNT2022TMID22548
+* Project name  : Customer care registry (ServiceHub)
+* Css name      : login  CSS
+* File name     : Agent-login  HTML  Template
+* File size     : 4 kb
+* Total lines   : 103
+====================================  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- login -->
+    <!-- fontawesome bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    <!-- favicon -->
+  	<link
+      rel="shortcut icon"
+      type="image/png"
+      href="{{ url_for('static', filename='assets/img/favicon.png')}}"/>
+
+	<!-- site title -->
+    <title>{% block title %} Agent login {% endblock %}</title>
+
+	<!-- Main css -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css')}}">
+	
+
+
+</head>
+
+<body>
+    {% block content %}
+    <!-- Start Sign up section -->
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="{{ url_for('register') }}" method="POST">
+			<h1>Register</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fa fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fa fa fa-google"></i></a>
+				<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input for="exampleInputname" id="name" type="text" placeholder="Name" required/>
+			<input for="exampleInputEmail" id="email" type="email" placeholder="Email" required/>
+			<input for="exampleInputPassword" id="passowrd" type="password" placeholder="Password" required/>
+            <input type="password" id="cpassword" placeholder="Confirm Password" required/>
+			<button type="submit">Sign Up</button>
+		</form>
+		</form>
+	</div>
+	<!-- End Sign-up section -->
+
+    <!-- Start Sign in section -->
+
+	<div class="form-container sign-in-container">
+		<form action="{{ url_for('login') }}" method="POST">
+			<h1>Agent Sign-in</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fa fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fa fa-google"></i></a>
+				<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+			</div>
+			<span>or use your account</span>
+			<input for="exampleInputid" id="email" type="email" placeholder="Email" required/>
+			<input for="exampleInputPassword1" id="password" type="password" placeholder="Password" required/>
+			<a href="{{ url_for('forgot') }}">Forgot your password?</a>
+			<button type="submit">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Hi!</h1>
+				<p>Create Your Agent Account</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Welcome to ServiceHub</h1>
+				<p>Enter your agent details OR click sing up to create your account</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End sign-in section -->
+
+<!-- Start components -->
+<div>
+	<img alt="tree" src="{{ url_for('static', filename='assets/img/components/auth-v1-tree-2.png')}}" class="css-1lwg88w">
+	
+	<img alt="tree-2" src="{{ url_for('static', filename='assets/img/components/auth-v1-tree.png')}}" class="css-c0oycv">
+  </div>
+<!-- End components -->
+
+<!-- javascript -->
+<script src="../static/js/login.js"></script>
+
+{% endblock %}
+</body>
+</html>
