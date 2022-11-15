@@ -1,0 +1,94 @@
+<!-- ==================================
+* Date          : 08-11-2022
+* Team ID       : PNT2022TMID22548
+* Project name  : Customer care registry (ServiceHub)
+* Css name      : Issue-form
+* File name     : Issue-form  HTML  Template
+* File size     : 3kb
+* Total lines   : 83
+====================================  -->
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+   <head>
+      <!-- Meta -->
+      <title>{% block title %} Issue Creation {% endblock %}</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="Free HTML template">
+      <meta name="keywords" content="HTML, template, free">
+      <meta name="author" content="Nicola Tolin">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- favicon -->
+  	<link
+     rel="shortcut icon"
+     type="image/png"
+     href="{{ url_for('static', filename='assets/img/favicon.png')}}"/>
+
+
+      <!-- Styles -->
+      <link href="{{ url_for('static', filename='css/Issue-bootstrap.min.css')}}" rel="stylesheet" type="text/css"/>
+
+      <!-- Main css -->
+      <link href="{{ url_for('static', filename='css/Issue.css')}}" rel="stylesheet" type="text/css"/>
+   </head>
+   <body>
+      {% block content %}
+           <!-- Contact Form -->
+      <div class="container-fluid contact-form">
+         <div class="row">
+            <div class="col-md-10 offset-md-1">
+               <div class="row">
+                  <div class="col-xl-6 col-md-11 col-sm-12 pb-5">
+                     <p class="pb-5">
+                        <img src="{{ url_for('static', filename='assets/img/black-favicon.png')}}" alt="Logo">
+                     </p>
+                  </div>
+                  <div class="col-xl-5 offset-xl-1 col-md-12 col-sm-12">
+                     <form action="{{ url_for('issuse') }}" method="POST">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="md-form form-group">
+                                 <input type="text" class="form-control" placeholder="User Name" required>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="md-form form-group">
+                                 <input for="exampleInputname" type="text" class="form-control" placeholder="User ID" value="{{msg}}" required>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="md-form form-group">
+                                 <input type="email" class="form-control" placeholder="User Email" required>
+                              </div>
+                           </div>
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="md-form form-group">
+                                 <textarea rows="10" cols="50" class="form-control" placeholder="Your Issue" required></textarea>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="md-form form-group">
+                                 <input type="email" class="form-control" placeholder="Date" required>
+                              </div>
+                           </div>
+                        <button type="submit" class="btn btn-primary btn-md">Send</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Contact Form -->
+         <!-- Javascript -->
+      <script src="../static/js/bootstrap.min.js"></script>
+      <!-- End Javascript -->
+      {% endblock %}
+   </body>
+</html>

@@ -1,0 +1,85 @@
+/*==================================
+* Date          : 08-11-2022
+* Team ID       : PNT2022TMID22548
+* Project name  : Customer care registry (ServiceHub)
+* Template Name : issuse-form  HTML Template
+* File name     : issuse-form CSS  Template
+* File size     : 2kb
+* Total lines   : 82
+==================================== */
+
+/*==================================
+font-family: 'IBM Plex Sans', sans-serif;
+==================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;700&family=Raleway&display=swap');
+
+/* Basic */
+
+body {
+	background-color: #000000;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+html {
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* logo */
+img{
+    max-width: 400px;
+    max-height: 900px;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+/* Contact */
+
+.contact {
+	font-size: 1.5em;
+	background-color: #000;
+	color: #fff;
+	padding-top: 15rem;
+	padding-bottom: 10rem;
+}
+
+
+/* Contact Form */
+
+.contact-form {
+	font-size: 1.2em;
+	background-color: #000;
+	color: #fff;
+	padding-bottom: 11rem;
+}
+
+.contact-form .btn-primary {
+	color: #000;
+	background-color: #fff;
+	border-color: #fff;
+}
+
+.contact-form .form-control {
+	color: #fff;
+	background-color: transparent;
+	border: 2px solid;
+	border-radius: 0;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: #fff;
+	opacity: 0.6;
+}
+
+.form-control {
+	padding: 1.5rem .75rem;
+}
+
+.contact-form .btn {
+	padding: 0.8rem 4rem;
+}
+
+

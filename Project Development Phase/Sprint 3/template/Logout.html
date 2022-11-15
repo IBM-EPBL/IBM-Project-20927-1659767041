@@ -1,0 +1,107 @@
+<!-- ==================================
+* Date          : 06-11-2022
+* Team ID       : PNT2022TMID22548
+* Project name  : Customer care registry (ServiceHub)
+* Css name      : Style  
+* File name     : Login-page  HTML  Template
+* File size     : 17kb
+* Total lines   : 104
+====================================  -->
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+		<!-- jquery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		<!-- fontawesome bootstrap -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/linearicons.css')}}">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css')}}">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css')}}">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootsnav.css')}}" >	
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}">
+        
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        
+        <!-- title of site -->
+        <title>{% block title %} Logout {% endblock %}</title>
+
+        <!-- favicon -->
+  	<link
+      rel="shortcut icon"
+      type="image/png"
+      href="{{ url_for('static', filename='assets/img/favicon.png')}}"/>
+       
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+        
+    </head>
+	
+	<body>
+		{% block content %}
+		<!--Logout-hero start -->
+					<!--/.carousel-inner -->
+				<div style="background-color: black;padding-top: 0px;"  role="listbox">
+					<!-- .item -->
+							<div class="container">
+										<div class="col-sm-7">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-txt">
+													<h2 style="color: #fff;">You Been Logged out...</h2>
+                                                    <h2 style="color: #fff;">kindly go back to <a href="{{ url_for('home')}}" style="font-size: 90px;">home</a></h2>
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+										<div class="col-sm-5">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-img">
+													<img src="{{ url_for('static', filename='assets/img/pics/Sleep-illustration.png')}}" alt="slider image">
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+									
+				</div><!-- /.carousel-inner-->
+
+			</div><!--/#header-carousel-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="{{ url_for('static', filename='js/jquery.js')}}"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+		
+		<!-- bootsnav js -->
+		<script src="{{ url_for('static', filename='js/bootsnav.js')}}"></script>
+
+		<!--owl.carousel.js-->
+        <script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+
+        <!--Custom JS-->
+        <script src="{{ url_for('static', filename='js/custom.js')}}"></script>
+        {% endblock %}
+    </body>
+	
+</html>

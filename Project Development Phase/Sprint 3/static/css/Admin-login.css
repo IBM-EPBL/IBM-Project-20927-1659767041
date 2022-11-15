@@ -1,0 +1,249 @@
+/*==================================
+* Date          : 07-11-2022
+* Team ID       : PNT2022TMID22548
+* Project name  : Customer care registry (ServiceHub)
+* Template name : Admin-login  HTML Template
+* File name     : Admin-login CSS  Template
+* File size     : 5 kb
+* Total lines   : 249
+==================================== */
+
+/*==================================
+font-family: 'IBM Plex Sans', sans-serif;
+==================================== */
+
+/*=========== TABLE OF CONTENTS ===========
+1.General css (Reset code)
+2.Form section
+3.Tow components
+==========================================*/
+
+/*-------------------------------------
+		1.General css (Reset code)
+--------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;700&family=Raleway&display=swap');
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: #170022;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  width: 400px;
+}
+
+/*-------------------------------------
+		2.Form section
+--------------------------------------*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  max-width: 320px;
+  padding: 2rem 2rem 2rem 2rem;
+  position: relative;
+}
+form::before, form::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+form::before {
+  z-index: -1;
+  background: transparent;
+  transform: translateX(-3.5rem) translateY(-3.75rem);
+  border: 6px solid #ffffff;
+}
+form::after {
+  background: #1f1f1f;
+  z-index: -2;
+  transform: translateX(-2rem) translateY(-2.25rem);
+}
+form h1 {
+  text-align: center;
+  margin: 0 0 0.25rem 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+form small {
+  display: block;
+  margin: 0 auto 1rem;
+  padding: 0;
+  font-size: 14px;
+}
+form:focus-within {
+  background: #2e2e2e;
+  color: #ffffff;
+}
+form:focus-within::before {
+  width: 0%;
+  height: 0%;
+  transform: translatex(0px) translatey(0px);
+}
+form .field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+}
+form label,
+form input {
+  transition: all 0.3s ease;
+  touch-action: manipulation;
+}
+form label {
+  opacity: 0;
+}
+form input {
+  padding: 10px 20px;
+  border: 4px solid white;
+  margin: 0 1.5rem;
+  background-color: transparent !important;
+  /* -webkit-appearance: none; */
+  color: rgb(0, 0, 0);
+}
+form input:-webkit-autofill {
+  background-color: transparent !important;
+  /* -webkit-box-shadow: 0 0 0px 1000px #b3ee11 inset; */
+  -webkit-text-fill-color: white !important;
+}
+form input::-moz-placeholder {
+  color: rgb(0, 0, 0);
+}
+form input:-ms-input-placeholder {
+  color: rgb(0, 0, 0);
+}
+form input::placeholder {
+  color: white;
+}
+form input:focus {
+  color: #ffffff;
+  font-weight: bold;
+  outline: 0;
+  border: 6px solid #000000;
+}
+form input::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+form input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+form button {
+  border: none;
+  padding: 0.85rem 1rem;
+  margin-top: 2rem;
+  background-color: #ffffff;
+  color: rgb(5, 5, 5);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  width: 65%;
+  position: absolute;
+  bottom: -20px;
+  right: 18%;
+  letter-spacing: 0.15em;
+  transition: all 0.3s ease;
+  border: #020011;
+}
+form button:hover {
+  border: 6px solid #000000;
+}
+form p {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  margin: 0.5rem 1.5rem 1.75rem 1.5rem;
+}
+form p.success-message {
+  font-size: 1.25rem;
+  text-align: center;
+  line-height: 2rem;
+  margin: 1.5rem auto 5rem auto;
+}
+
+/*-------------------------------------
+		3.Tow components
+--------------------------------------*/
+.css-1lwg88w {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.css-c0oycv {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+/* Responsive of the tow componets This will hide the component
+If screen size changed*/
+@media (max-width: 1200px) {
+  .css-1lwg88w {
+    display: none;
+  }
+  .css-c0oycv{
+    display: none;
+  }
+}/* max-width:1200px */
+
+@media screen and (max-width: 660px){
+  .css-1lwg88w {
+    display: none;
+  }
+  .css-c0oycv{
+    display: none;
+  }
+}/*max-width:660px*/
+
+@media screen and (max-width: 640px){
+  .css-1lwg88w {
+    display: none;
+  }
+  .css-c0oycv{
+    display: none;
+  }
+}/*max-width:640px*/
+
+@media screen and (max-width: 580px){
+  .css-1lwg88w {
+    display: none;
+  }
+  .css-c0oycv{
+    display: none;
+  }
+}/*max-width:580px*/
+
+@media screen and (max-width: 540px){
+  .css-1lwg88w {
+    display: none;
+  }
+  .css-c0oycv{
+    display: none;
+  }
+}/*max-width:540px*/
+
+@media screen and (max-width: 480px){
+	.css-1lwg88w {
+    display: none;
+  }
+  .css-c0oycv{
+    display: none;
+  }
+	
+}/*max-width:480px*/
