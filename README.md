@@ -32,7 +32,7 @@ IBM Cloud,HTML,Javascript,IBM Cloud Object Storage,Python-Flask,Kubernetes,Docke
 - [@Soundharyan S G](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/tree/main/Assignments/Soundharyan%20S%20G)
 
 ## Environmental setup
-- [x] [Environmental setup](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/blob/main/Environmental%20setup/Environmental%20Setup.pdf)
+- [x] [Environmental setup](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/blob/main/Environmental%20setup/Environmental-setup.pdf)
 
 ## PROJECT DESIGN & PLANNING
  [IDEATION PHASE](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/tree/main/Project%20Design%26Planing/Ideation%20phase)
