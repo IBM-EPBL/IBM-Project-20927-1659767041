@@ -1,5 +1,5 @@
 ## Final Deliverables
 
-- [ ]   Final code
-- [ ]   Demonstration video
+- [x]   Final code
+- [x]   Demonstration video
 - [ ]   Project report
