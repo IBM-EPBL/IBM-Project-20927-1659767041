@@ -2,4 +2,4 @@
 
 - [x]   Final code
 - [x]   Demonstration video
-- [ ]   Project report
+- [x]   Project report
