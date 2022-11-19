@@ -1,2 +1,3 @@
 ### Sprint 4
-overall
+Overall project deployment
+And fixed some known bugs
