@@ -64,10 +64,10 @@ IBM Cloud,HTML,Javascript,IBM Cloud Object Storage,Python-Flask,Kubernetes,Docke
 - [x]  Sprint-4
 
 [FINAL DELIVERABLES](https://github.com/IBM-EPBL/IBM-Project-20927-1659767041/tree/main/Final%20Deliverables)
-- [x] [Final code]
-- [x] [Project preview]
-- [x] [Demonstration video]
-- [x] [Project report]
+- [x] Final code
+- [x] Project preview
+- [x] Demonstration video
+- [x] Project report
 
 ## 
 Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College
